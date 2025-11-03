@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  </head>
+  <body>
+    <nav>
+      <a href="{{ '/' | relative_url }}">Home</a> |
+      <a href="{{ '/blog/' | relative_url }}">Blog</a> |
+      <a href="{{ '/articles/' | relative_url }}">Articles</a> |
+      <a href="{{ '/youtube/' | relative_url }}">YouTube</a> |
+      <a href="{{ '/achievements/' | relative_url }}">Achievements</a>
+    </nav>
+    <hr>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      <hr>
+      <small>
+        &copy; {{ site.time | date: '%Y' }} {{ site.title }}.
+      </small>
+    </footer>
+  </body>
+</html>
