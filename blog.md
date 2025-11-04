@@ -6,16 +6,16 @@ permalink: /blog/
 
 # Blog
 
-Welcome to my cybersecurity blog!
-
 ## Recent Posts
 
-Coming soon! Check back for articles about:
-- Security best practices
-- Vulnerability analysis
-- Cybersecurity tools and techniques
-- Industry news and updates
+{% for post in site.posts %}
+  <article>
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+    <p>{{ post.excerpt }}</p>
+  </article>
+{% endfor %}
 
----
-
-[← Back to Home](/)
+{% if site.posts.size == 0 %}
+  <p>No posts yet. Check back soon!</p>
+{% endif %}
