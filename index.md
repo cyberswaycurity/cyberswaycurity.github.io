@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-# Welcome to Cyberswacurity!
+# Welcome to Cyberswaycurity!
 
 This is my personal space for sharing blog posts, curated articles, favorite YouTube videos, and my personal achievements.
 
