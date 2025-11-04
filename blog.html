@@ -6,16 +6,32 @@ permalink: /blog/
 
 <h1>Blog</h1>
 
-<h2>Recent Posts</h2>
-
 {% if site.posts.size > 0 %}
-  {% for post in site.posts %}
-    <article style="margin-bottom: 2em;">
-      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <time>{{ post.date | date: "%B %d, %Y" }}</time>
-      <p>{{ post.excerpt | strip_html | truncate: 200 }}</p>
-    </article>
-  {% endfor %}
+  {% assign first_post = site.posts.first %}
+  
+  <!-- Show the first/latest post in full -->
+  <article style="margin-bottom: 3em;">
+    <h2>{{ first_post.title }}</h2>
+    <time style="color: #666;">{{ first_post.date | date: "%B %d, %Y" }}</time>
+    <div style="margin-top: 1em;">
+      {{ first_post.content }}
+    </div>
+  </article>
+  
+  <hr>
+  
+  <!-- List older posts if they exist -->
+  {% if site.posts.size > 1 %}
+    <h2>Previous Posts</h2>
+    {% for post in site.posts offset:1 %}
+      <article style="margin-bottom: 2em;">
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <time style="color: #666;">{{ post.date | date: "%B %d, %Y" }}</time>
+        <p>{{ post.excerpt | strip_html | truncate: 200 }}</p>
+      </article>
+    {% endfor %}
+  {% endif %}
+  
 {% else %}
   <p>No posts yet. Check back soon!</p>
 {% endif %}
