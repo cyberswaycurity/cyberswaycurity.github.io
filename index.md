@@ -1,6 +1,5 @@
 ---
 layout: home
-title: Home - Cyberswacurity
 ---
 
 # Welcome to Cyberswacurity!
