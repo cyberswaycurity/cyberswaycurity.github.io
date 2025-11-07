@@ -8,7 +8,7 @@ permalink: /youtube/
 
 A list of YouTube channels and videos I recommend:
 
-- [Channel 1](https://youtube.com/channel/CHANNEL_ID) — Brief description.
-- [Video 1](https://youtu.be/VIDEO_ID) — Why I like this video.
+- [3Blue1Brown](https://www.youtube.com/@3blue1brown) — Grant Sanderson's channel where he covers a variety of topics in math, or adjacent fields like physics and CS, all with an emphasis on visualizing the core ideas.
+- [John Hammond](https://www.youtube.com/@_JohnHammond) — John Hammond's channel where he explains cybersecurity topics and CTF challenges.
 
 _Add and update as you discover more!_
