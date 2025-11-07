@@ -10,6 +10,7 @@ This is my personal space for sharing blog posts, curated articles, favorite You
 - [My Blog](/blog/)
 - [Interesting Articles](/articles/)
 - [Interesting YouTube Channels & Videos](/youtube/)
+- [Interesting Newsletters](/newsletters/)
 - [View My Achievements](/achievements/)
 
 Feel free to explore using the navigation above.
