@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Interesting Newsletters
-permalink: /youtube/
+permalink: /newsletters/
 ---
 
 # Newsletters
